@@ -1,0 +1,23 @@
+<html>
+<head>
+        <title>EJS Syntax Example</title>
+</head>
+<body>
+    <!--Using Variable-->
+    <h1>Hello, <%= username %>!</h1>
+    <!--Conditional Statement -->
+    <% if (isAdmin) { %>
+        <p>Welcome, Admin!</p>
+    <% } else { %>
+        <p>Welcome, User!</p>
+    <% } %>
+    <!-- Loop Statement-->
+    <ul>
+        <% for(let i=1; i<=5; i++) { %>
+            <li>Item <%= i %></li>
+        <% } %>
+    </ul>
+    <!-- Include other File-->
+    <%- include('components/footer') %>
+</body>
+</html>
